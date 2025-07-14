@@ -1,25 +1,5 @@
 // main.js
 
-// Mobile menu functionality
-function toggleMobileMenu() {
-  const mobileMenu = document.getElementById('mobileMenu');
-  if (mobileMenu.style.display === 'block') {
-    mobileMenu.style.display = 'none';
-  } else {
-    mobileMenu.style.display = 'block';
-  }
-}
-
-// Close mobile menu when clicking outside
-document.addEventListener('click', function(event) {
-  const mobileMenu = document.getElementById('mobileMenu');
-  const menuToggle = document.querySelector('.mobile-menu-toggle');
-  
-  if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-    mobileMenu.style.display = 'none';
-  }
-});
-
 document.addEventListener('DOMContentLoaded', function () {
   // Add loading overlay
   const loadingOverlay = document.createElement('div');
