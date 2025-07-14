@@ -117,12 +117,12 @@ body {
     background-attachment: fixed;
     position: relative;
     padding: 2rem 2rem 3rem;
-    min-height: 80vh;
-    height: 80vh;
+    min-height: 100vh;  /* Changed from 50vh */
+    height: 100vh;       /* Ensures it takes full height of the screen */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;   /* Center horizontally */
     text-align: center;
     will-change: transform;
 }
@@ -156,23 +156,16 @@ body {
     align-items: center;
     position: relative;
     z-index: 2;
-    margin-bottom: 1rem;
-    width: 100%;
-    align-self: flex-start;
+    margin-bottom: 2rem;
 }
 
 .header-content {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0;
     position: relative;
     z-index: 2;
     animation: fadeInUp 1.2s ease-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
 }
 
 
@@ -248,11 +241,8 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem; /* Reduced from 2rem */
   flex-wrap: wrap;
-  width: 100%;
-  position: relative;
-  z-index: 10;
 }
 
 
@@ -319,8 +309,6 @@ h1 {
     transition: all 0.3s ease;
     backdrop-filter: blur(15px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 100;
 }
 
 .category-dropdown::after {
@@ -757,22 +745,21 @@ footer p {
 @media (max-width: 768px) {
     .unified-header {
         padding: 1.5rem 1rem;
-        min-height: 75vh;
-        height: 75vh;
+        min-height: 70vh;
+        height: auto !important;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
     
     .navbar {
         display: flex;
         justify-content: flex-start;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         width: 100%;
         position: relative;
         z-index: 10;
-        align-self: flex-start;
     }
     
     .home-button {
@@ -802,11 +789,6 @@ footer p {
         text-align: center;
         position: relative;
         z-index: 5;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
     }
     
     h1 { 
@@ -935,9 +917,7 @@ footer p {
         max-width: 100%;
         width: 100%;
         position: relative;
-        z-index: 1000;
-        display: block !important;
-        visibility: visible !important;
+        z-index: 10;
     }
     
     .category-dropdown select {
@@ -952,10 +932,6 @@ footer p {
         cursor: pointer;
         appearance: none;
         -webkit-appearance: none;
-        position: relative;
-        z-index: 1001;
-        display: block !important;
-        visibility: visible !important;
     }
     
     .category-dropdown::after {
@@ -966,9 +942,7 @@ footer p {
         transform: translateY(-50%);
         color: var(--primary-color);
         pointer-events: none;
-        z-index: 1002;
-        display: block !important;
-        visibility: visible !important;
+        z-index: 1;
     }
     
     .poem-section {
@@ -976,21 +950,21 @@ footer p {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 100%;
         position: relative;
-        z-index: 100;
+        z-index: 5;
     }
 }
 
 @media (max-width: 480px) {
     .unified-header {
         padding: 1rem 0.5rem;
-        min-height: 70vh;
-        height: 70vh;
+        min-height: 60vh;
+        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
     
@@ -999,9 +973,6 @@ footer p {
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        align-self: flex-start;
-        position: relative;
-        z-index: 10;
     }
     
     .home-button {
@@ -1019,11 +990,6 @@ footer p {
         width: 100%;
         text-align: center;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
     }
     
     h1 {
@@ -1113,9 +1079,6 @@ footer p {
         margin: 1rem auto 0;
         width: 100%;
         position: relative;
-        z-index: 1000;
-        display: block !important;
-        visibility: visible !important;
     }
     
     .category-dropdown select {
@@ -1127,10 +1090,6 @@ footer p {
         border: 2px solid rgba(255, 255, 255, 0.4);
         border-radius: 50px;
         color: var(--primary-color);
-        position: relative;
-        z-index: 1001;
-        display: block !important;
-        visibility: visible !important;
     }
     
     .category-dropdown::after {
@@ -1141,9 +1100,6 @@ footer p {
         transform: translateY(-50%);
         color: var(--primary-color);
         pointer-events: none;
-        z-index: 1002;
-        display: block !important;
-        visibility: visible !important;
     }
     
     .poem-counter {
@@ -1179,20 +1135,17 @@ footer p {
         align-items: center;
         gap: 1rem;
         width: 100%;
-        margin-top: 2rem;
-        position: relative;
-        z-index: 100;
+        margin-top: 1rem;
     }
 }
 
 @media (max-width: 360px) {
     .unified-header {
         padding: 0.5rem 0.25rem;
-        min-height: 65vh;
-        height: 65vh;
+        min-height: 50vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
     
@@ -1201,9 +1154,6 @@ footer p {
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        align-self: flex-start;
-        position: relative;
-        z-index: 10;
     }
     
     .home-button {
@@ -1221,11 +1171,6 @@ footer p {
         width: 100%;
         text-align: center;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
     }
     
     h1 {
@@ -1331,10 +1276,6 @@ footer p {
         border-radius: 50px;
         color: var(--primary-color);
         width: 100%;
-        position: relative;
-        z-index: 1001;
-        display: block !important;
-        visibility: visible !important;
     }
     
     .category-dropdown::after {
@@ -1345,18 +1286,13 @@ footer p {
         transform: translateY(-50%);
         color: var(--primary-color);
         pointer-events: none;
-        z-index: 1002;
-        display: block !important;
-        visibility: visible !important;
     }
     
     .poem-section {
         gap: 1rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        position: relative;
-        z-index: 100;
     }
 }
