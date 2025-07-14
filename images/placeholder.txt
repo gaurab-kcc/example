@@ -1,0 +1,8 @@
+This folder contains images for the poetry website:
+
+- unified-header.jpeg (header background image)
+- poem-wrapper.png (poems section background)
+- header.png (individual poem page background)
+- poem-header.jpg (poem card placeholder images)
+
+Please add your actual image files to this folder.
