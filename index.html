@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Poems | Gaurab</title>
+  <meta name="description" content="Journey through emotions, experiences, and moments captured in verses by Gaurab Aryal">
+  <meta name="keywords" content="poetry, poems, literature, Gaurab Aryal, creative writing">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg" as="image">
+  <link rel="preload" href="css/styles.css" as="style">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+  <div class="unified-header">
+     <div class="navbar">
+      <nav>
+        <a href="/" class="home-button">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </nav>
+    </div> 
+
+    <div class="header-content">
+      <h1>Poetry Collection</h1>
+      <div class="underline"></div>
+      <p class="poems-description">
+        Journey through emotions, experiences, and moments captured in verses. 
+        Each poem tells a unique story, emotion, that I have been through.
+      </p>
+      
+ <div class="poem-section">
+  <div class="poem-counter">
+    <span class="counter-number"> 81 </span>
+    <span class="counter-label">Poems</span>
+  </div>
+
+  <div class="category-dropdown">
+    <select id="poem-category" aria-label="Filter poems by category">
+      <option value="all">All Poems</option>
+      <option value="love">Love</option>
+      <option value="life">Life</option>
+      <option value="nature">Nature</option>
+      <option value="spirituality">Spirituality</option>
+      <option value="family">Family</option>
+      <option value="friendship">Friendship</option>
+      <option value="introspection">Introspection</option>
+    </select>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <div class="poems-wrapper">
+    <div class="poems-grid">
+
+
+      <a href="/poems/ritual.html" class="poem-card" data-category="introspection" aria-label="Read Realization">
+   </a>     <span class="poem-category">Introspection</span>
+        <img src="images/poem-header.jpg" alt="Realization" loading="lazy">
+        <div class="poem-card-content">
+          <h2 class="poem-title">Crying Mother on Her Fall</h2>
+          <p class="poem-description">A reflection on the journey of writing and the questions discovered along the way.</p>
+        </div>
+      </a>
+
+      <a href="/poems/showoff.html" class="poem-card" data-category="introspection" aria-label="Read Show Off">
+        <span class="poem-category">Introspection</span>
+        <img src="images/poem-header.jpg" alt="Show Off" loading="lazy">
+        <div class="poem-card-content">
+          <h2 class="poem-title">Show Off</h2>
+          <p class="poem-description">A brief reflection on desire, longing, and the differences between people.</p>
+        </div>
+      </a>
+
+      <a href="/poems/silently.html" class="poem-card" data-category="life" aria-label="Read Silently">
+        <span class="poem-category">Life</span>
+        <img src="images/poem-header.jpg" alt="Silently" loading="lazy">
+        <div class="poem-card-content">
+          <h2 class="poem-title">Silently</h2>
+          <p class="poem-description">A quiet departure from pain, choosing to leave silently without waiting for anyone.</p>
+        </div>
+      </a>
+
+      <a href="/poems/sorry.html" class="poem-card" data-category="introspection" aria-label="Read Sorry">
+        <span class="poem-category">Introspection</span>
+        <img src="images/poem-header.jpg" alt="Sorry" loading="lazy">
+        <div class="poem-card-content">
+          <h2 class="poem-title">Sorry</h2>
+          <p class="poem-description">A profound apology for existence, pain caused, and the destruction of built dreams.</p>
+        </div>
+      </a>
+
+      <a href="/poems/stone.html" class="poem-card" data-category="introspection" aria-label="Read Stone">
+        <span class="poem-category">Introspection</span>
+        <img src="images/poem-header.jpg" alt="Stone" loading="lazy">
+        <div class="poem-card-content">
+          <h2 class="poem-title">Stone</h2>
+          <p class="poem-description">A declaration of acceptance, choosing to remain as stone rather than be polished into something else.</p>
+        </div>
+      </a>
+      
+      <a href="/poems/whisper.html" class="poem-card" data-category="love" aria-label="Read Sunlight"></a>
+        <span class="poem-category">Love</span>
+        <img src="images/poem-header.jpg" alt="Sunlight" loading="lazy">
+        <div class="poem-card-content">
+          <h2 class="poem-title">A Whisper at the End</h2>
+          <p class="poem-description">A tender memory etched in time, a moment that lived in me.</p>
+        </div>
+      </a>
+ 
+      <!-- this is last wrapper and grid  -->
+    </div>
+  </div>
+
+
+  <footer class="navbar">
+    <div class="footer-content">
+      <p>&copy; 2025 Gaurab Aryal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6WCQTHSCM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D6WCQTHSCM');
+  </script>
+  
+  <script src="/js/main.js"></script>
+
+</body>
+</html>
